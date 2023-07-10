@@ -1,0 +1,25 @@
+/* Default styles for all screen sizes */
+
+/* Styles for small screens */
+@media only screen and (max-width: 767px) {
+  /* Styles for screens up to 767px wide */
+  /* You can customize the styles for small screens here */
+}
+
+/* Styles for medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for screens between 768px and 991px wide */
+  /* You can customize the styles for medium screens here */
+}
+
+/* Styles for large screens */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for screens between 992px and 1199px wide */
+  /* You can customize the styles for large screens here */
+}
+
+/* Styles for extra large screens */
+@media only screen and (min-width: 1200px) {
+  /* Styles for screens wider than 1200px */
+  /* You can customize the styles for extra large screens here */
+}
