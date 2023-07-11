@@ -1,25 +1,686 @@
 /* Default styles for all screen sizes */
 
-/* Styles for small screens */
-@media only screen and (max-width: 767px) {
-  /* Styles for screens up to 767px wide */
-  /* You can customize the styles for small screens here */
-}
+/* Styles for extra large screens */
+@media only screen and (min-width: 1200px) {
+  /* Styles for screens wider than 1200px */
+  /* You can customize the styles for extra large screens here */
+  .container {
+    max-width: 1140px;
+  }
 
-/* Styles for medium screens */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* Styles for screens between 768px and 991px wide */
-  /* You can customize the styles for medium screens here */
+  .chart-container {
+    .header {
+      .content {
+        .information {
+          .title {
+            // h2 {
+            //   font-size: 20px;
+            //   margin-right: 24px;
+            // }
+
+            span {
+            }
+          }
+
+          .settings {
+            width: 100%;
+
+            .resolution {
+              img {
+              }
+
+              .resolution-action-buttons {
+                button {
+                  span {
+                  }
+
+                  &:hover {
+                    span {
+                    }
+                  }
+                }
+              }
+            }
+
+            .quality {
+              img {
+              }
+
+              span {
+              }
+
+              ul {
+                li {
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+      }
+    }
+
+    .chart-data {
+      .graphic-cards {
+      }
+
+      .bar-plots {
+        div.chart-range {
+          span {
+          }
+        }
+
+        .chart-lines {
+          > * {
+          }
+        }
+
+        .chart-data-content {
+          .wrapper {
+            &:first-child {
+            }
+
+            &:last-child {
+            }
+
+            .game-title {
+              &:hover {
+                svg {
+                }
+              }
+
+              span {
+              }
+
+              svg {
+              }
+            }
+
+            .chart-item {
+              div {
+              }
+
+              .primary {
+              }
+
+              .secondary {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    hr.line {
+    }
+  }
 }
 
 /* Styles for large screens */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* Styles for screens between 992px and 1199px wide */
   /* You can customize the styles for large screens here */
+
+  .container {
+    max-width: 940px;
+  }
+
+  .chart-container {
+    .header {
+      .content {
+        .information {
+          .title {
+            h2 {
+              font-size: 20px;
+              margin-right: 24px;
+            }
+
+            span {
+            }
+          }
+
+          .settings {
+            .resolution {
+              width: 100%;
+              img {
+              }
+
+              .resolution-action-buttons {
+                button {
+                  span {
+                  }
+
+                  &:hover {
+                    span {
+                    }
+                  }
+                }
+              }
+            }
+
+            .quality {
+              margin-left: 0;
+              width: 48%;
+
+              img {
+              }
+
+              span {
+              }
+
+              ul {
+                li {
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+      }
+    }
+
+    .chart-data {
+      .graphic-cards {
+      }
+
+      .bar-plots {
+        div.chart-range {
+          span {
+          }
+        }
+
+        .chart-lines {
+          > * {
+          }
+        }
+
+        .chart-data-content {
+          .wrapper {
+            &:first-child {
+            }
+
+            &:last-child {
+            }
+
+            .game-title {
+              &:hover {
+                svg {
+                }
+              }
+
+              span {
+              }
+
+              svg {
+              }
+            }
+
+            .chart-item {
+              div {
+              }
+
+              .primary {
+              }
+
+              .secondary {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    hr.line {
+    }
+  }
 }
 
-/* Styles for extra large screens */
-@media only screen and (min-width: 1200px) {
-  /* Styles for screens wider than 1200px */
-  /* You can customize the styles for extra large screens here */
+/* Styles for medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .chart-container {
+    padding: 40px;
+    padding-bottom: 64px;
+
+    .header {
+      .content {
+        .information {
+          align-items: start;
+          width: 100%;
+
+          .title {
+            flex-direction: column;
+
+            h2 {
+              width: 100%;
+              margin-right: 0;
+              margin-bottom: 8px;
+            }
+            span {
+              margin-bottom: 8px;
+            }
+          }
+
+          .line {
+            display: block;
+          }
+
+          .settings {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .resolution {
+              align-items: start;
+              flex-direction: column;
+              margin-bottom: 12px;
+
+              .wrapper {
+                margin-bottom: 6px;
+                align-items: start;
+                img {
+                }
+              }
+
+              .resolution-action-buttons {
+                display: flex;
+                margin-left: 0px;
+
+                button {
+                  span {
+                  }
+
+                  &:hover {
+                    span {
+                    }
+                  }
+                }
+              }
+            }
+
+            .quality {
+              margin: 0;
+              img {
+              }
+
+              span {
+              }
+
+              ul {
+                li {
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+        display: none;
+      }
+    }
+
+    .chart-data {
+      .graphic-cards {
+      }
+
+      .bar-plots {
+        div.chart-range {
+          span {
+          }
+        }
+
+        .chart-lines {
+          > * {
+          }
+        }
+
+        .chart-data-content {
+          .wrapper {
+            &:first-child {
+            }
+
+            &:last-child {
+            }
+
+            .game-title {
+              &:hover {
+                svg {
+                }
+              }
+
+              span {
+              }
+
+              svg {
+              }
+            }
+
+            .chart-item {
+              div {
+              }
+
+              .primary {
+              }
+
+              .secondary {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    hr.line {
+    }
+  }
+}
+
+/* Styles for small screens */
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .chart-container {
+    padding: 32px 16px;
+    // padding-bottom: 54px;
+
+    .header {
+      .content {
+        .information {
+          align-items: start;
+          width: 100%;
+
+          .title {
+            flex-direction: column;
+
+            h2 {
+              width: 100%;
+              margin-right: 0;
+              margin-bottom: 8px;
+            }
+            span {
+              margin-bottom: 8px;
+            }
+          }
+
+          .line {
+            display: block;
+          }
+
+          .settings {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .resolution {
+              align-items: start;
+              flex-direction: column;
+              margin-bottom: 12px;
+
+              .wrapper {
+                margin-bottom: 6px;
+                align-items: start;
+                img {
+                }
+              }
+
+              .resolution-action-buttons {
+                display: flex;
+                margin-left: 0px;
+
+                button {
+                  span {
+                  }
+
+                  &:hover {
+                    span {
+                    }
+                  }
+                }
+              }
+            }
+
+            .quality {
+              margin: 0;
+              img {
+              }
+
+              span {
+              }
+
+              ul {
+                li {
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+        display: none;
+      }
+    }
+
+    .chart-data {
+      .graphic-cards {
+      }
+
+      .bar-plots {
+        div.chart-range {
+          span {
+          }
+        }
+
+        .chart-lines {
+          > * {
+          }
+        }
+
+        .chart-data-content {
+          .wrapper {
+            &:first-child {
+            }
+
+            &:last-child {
+            }
+
+            .game-title {
+              &:hover {
+                svg {
+                }
+              }
+
+              span {
+              }
+
+              svg {
+              }
+            }
+
+            .chart-item {
+              div {
+              }
+
+              .primary {
+              }
+
+              .secondary {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    hr.line {
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .chart-container {
+    padding: 32px;
+    padding-bottom: 54px;
+
+    .header {
+      .content {
+        .information {
+          align-items: start;
+
+          .title {
+            flex-direction: column;
+
+            h2 {
+              width: 100%;
+              margin-right: 0;
+              margin-bottom: 8px;
+            }
+            span {
+              margin-bottom: 8px;
+            }
+          }
+
+          .line {
+            display: block;
+          }
+
+          .settings {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .resolution {
+              align-items: start;
+              flex-direction: column;
+              margin-bottom: 12px;
+
+              .wrapper {
+                margin-bottom: 6px;
+                align-items: start;
+                img {
+                }
+              }
+
+              .resolution-action-buttons {
+                display: flex;
+                margin-left: 0px;
+
+                button {
+                  span {
+                  }
+
+                  &:hover {
+                    span {
+                    }
+                  }
+                }
+              }
+            }
+
+            .quality {
+              margin: 0;
+              img {
+              }
+
+              span {
+              }
+
+              ul {
+                li {
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+        display: none;
+      }
+    }
+
+    .chart-data {
+      .graphic-cards {
+      }
+
+      .bar-plots {
+        div.chart-range {
+          span {
+          }
+        }
+
+        .chart-lines {
+          > * {
+          }
+        }
+
+        .chart-data-content {
+          .wrapper {
+            &:first-child {
+            }
+
+            &:last-child {
+            }
+
+            .game-title {
+              &:hover {
+                svg {
+                }
+              }
+
+              span {
+              }
+
+              svg {
+              }
+            }
+
+            .chart-item {
+              div {
+              }
+
+              .primary {
+              }
+
+              .secondary {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    hr.line {
+    }
+  }
+  /* sm */
+}
+
+@media only screen and (max-width: 575.98px) {
+  /* xs */
+
+  .chart-container {
+    padding: 32px;
+    padding-bottom: 54px;
+  }
 }
