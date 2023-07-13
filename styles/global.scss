@@ -18,7 +18,7 @@ body {
   background-color: #f1f1f1;
   border-radius: 24px;
   padding: 60px;
-  padding-bottom: 84px;
+  padding-bottom: 144px;
   max-width: 1030px;
   width: 100%;
 
@@ -111,7 +111,6 @@ body {
 
           .quality {
             margin-left: 64px;
-
             display: flex;
             align-items: center;
 
@@ -161,9 +160,9 @@ body {
 
     .bar-plots {
       width: 100%;
+      position: relative;
 
       div.chart-range {
-        position: relative;
         right: 0;
 
         span {
@@ -182,12 +181,85 @@ body {
         height: 100%;
         position: absolute;
         left: 23%;
+        flex-direction: column;
 
-        > * {
-          margin-left: 0;
-          width: 1px;
+        .chart-range {
+          position: relative;
+          right: 0;
+          display: flex;
+          justify-content: space-between;
           height: 100%;
-          background-color: #dadada;
+
+          > div {
+            margin-left: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #dadada;
+          }
+        }
+
+        .chart-info {
+          position: relative;
+          width: 100%;
+          position: absolute;
+          bottom: -87px;
+
+          .line {
+            position: absolute;
+            top: -11px;
+            width: 128%;
+            left: -28%;
+            display: none;
+          }
+
+          .content {
+            display: flex;
+            justify-content: space-between;
+
+            .chart-info-performance {
+              display: flex;
+              align-items: center;
+              > * {
+                margin-right: 8px;
+              }
+
+              .info-item-performance {
+                display: flex;
+                align-items: center;
+                font-size: 11px;
+
+                .block-fps {
+                  width: 16px;
+                  height: 16px;
+                  border-radius: 6px;
+                  background-color: rgba(106, 106, 106, 1);
+                  margin-right: 8px;
+                }
+
+                .block-low {
+                  width: 16px;
+                  height: 16px;
+                  border-radius: 6px;
+                  background-color: rgba(217, 217, 217, 1);
+                  margin-right: 8px;
+                }
+              }
+            }
+
+            .chart-info-description {
+              display: flex;
+              align-items: center;
+
+              .info-item-subtitle {
+                > * {
+                  margin-right: 8px;
+                }
+                display: flex;
+                align-items: center;
+                font-size: 11px;
+              }
+            }
+          }
         }
       }
 

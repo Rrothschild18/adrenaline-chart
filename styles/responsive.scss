@@ -251,7 +251,7 @@
 
   .chart-container {
     padding: 40px;
-    padding-bottom: 64px;
+    padding-bottom: 124px;
 
     .header {
       .content {
@@ -400,7 +400,7 @@
 
   .chart-container {
     padding: 32px 16px;
-    // padding-bottom: 54px;
+    padding-bottom: 74px;
 
     .header {
       .content {
@@ -477,6 +477,10 @@
         }
       }
 
+      .chart-data .bar-plots .chart-lines .chart-info {
+        bottom: -37px;
+      }
+
       .logo {
         display: none;
       }
@@ -541,7 +545,7 @@
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .chart-container {
     padding: 32px;
-    padding-bottom: 54px;
+    padding-bottom: 104px;
 
     .header {
       .content {
@@ -622,6 +626,10 @@
       }
     }
 
+    .chart-data .bar-plots .chart-lines .chart-info {
+      bottom: -70px;
+    }
+
     .chart-data {
       .graphic-cards {
       }
@@ -676,6 +684,7 @@
         .chart-data-content {
           .wrapper {
             &:first-child {
+              // padding-top: 0px;
             }
 
             &:last-child {
@@ -778,6 +787,21 @@
       }
     }
 
+    .chart-data .bar-plots .chart-lines .chart-info {
+      bottom: -50px;
+
+      .line {
+        display: inline;
+      }
+      .content {
+        flex-direction: column;
+
+        .chart-info-performance {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
     .chart-data {
       .graphic-cards {
         width: 30%;
@@ -798,11 +822,17 @@
           // height: 100%;
           // position: absolute;
           // left: 23%;
-          display: none;
+          .chart-range {
+            visibility: hidden;
+          }
         }
 
         .chart-data-content {
           .wrapper {
+            &:first-child {
+              padding-top: 0px;
+            }
+
             .graphic-card-name {
               width: 50%;
 
