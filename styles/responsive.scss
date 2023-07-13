@@ -356,16 +356,19 @@
             &:last-child {
             }
 
-            .game-title {
-              &:hover {
-                svg {
+            .graphic-card-name {
+              .title-block {
+                .content {
+                  text-align: end;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  width: 100%;
                 }
-              }
 
-              span {
-              }
-
-              svg {
+                svg {
+                  // visibility: hidden;
+                }
               }
             }
 
@@ -636,6 +639,42 @@
 
         .chart-data-content {
           .wrapper {
+            .graphic-card-name {
+              .title-block {
+                .content {
+                  span {
+                  }
+
+                  .overclock {
+                    padding: 5px;
+                    font-size: 10px;
+                  }
+
+                  svg {
+                  }
+                }
+              }
+            }
+
+            .chart-item {
+              .div {
+              }
+
+              .primary {
+                .primary-text {
+                }
+              }
+
+              .secondary {
+                .secondary-text {
+                }
+              }
+            }
+          }
+        }
+
+        .chart-data-content {
+          .wrapper {
             &:first-child {
             }
 
@@ -680,7 +719,151 @@
   /* xs */
 
   .chart-container {
-    padding: 32px;
-    padding-bottom: 54px;
+    .header {
+      .content {
+        .information {
+          .line {
+          }
+
+          .title {
+            h2 {
+            }
+
+            span {
+            }
+          }
+
+          .settings {
+            .resolution {
+              .wrapper {
+                img {
+                }
+              }
+
+              .resolution-action-buttons {
+                button {
+                  span {
+                  }
+
+                  &:hover {
+                    span {
+                    }
+                  }
+                }
+              }
+            }
+
+            .quality {
+              margin-left: 0;
+              img {
+              }
+
+              span {
+              }
+
+              ul {
+                li {
+                  &:hover {
+                    text-decoration: underline;
+                    color: #ff000f;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+      }
+    }
+
+    .chart-data {
+      .graphic-cards {
+        width: 30%;
+      }
+
+      .bar-plots {
+        width: 100%;
+
+        div.chart-range {
+          span {
+          }
+        }
+
+        .chart-lines {
+          // display: flex;
+          // justify-content: space-between;
+          // width: 77%;
+          // height: 100%;
+          // position: absolute;
+          // left: 23%;
+          display: none;
+        }
+
+        .chart-data-content {
+          .wrapper {
+            .graphic-card-name {
+              width: 50%;
+
+              .title-block {
+                .content {
+                  span {
+                  }
+
+                  .overclock {
+                  }
+
+                  svg {
+                  }
+                }
+              }
+            }
+
+            .chart-item {
+              width: 100%;
+              position: relative;
+              display: flex;
+              align-items: center;
+
+              .div {
+                position: relative;
+                width: 100%;
+              }
+
+              div {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 30px;
+                border-radius: 0 4px 4px 0;
+              }
+
+              .primary {
+                background: linear-gradient(90deg, #ec1c24 0%, #76191f 100%);
+                color: #fff;
+                font-weight: 500;
+
+                .primary-text {
+                  padding-right: 12px;
+                }
+              }
+
+              .secondary {
+                position: absolute;
+                top: 0;
+                color: rgba(0, 0, 0, 0.5);
+                border-radius: 0;
+                background-color: #f2d4d4;
+
+                .secondary-text {
+                  padding-right: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
