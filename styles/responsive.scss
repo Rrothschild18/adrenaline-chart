@@ -526,7 +526,17 @@
               div {
               }
 
+              .div {
+                .percent {
+                  color: #333333;
+                  font-size: 12px;
+                }
+              }
+
               .primary {
+                .primary-text {
+                  font-size: 14px;
+                }
               }
 
               .secondary {
@@ -567,6 +577,7 @@
 
           .line {
             display: block;
+            left: 0%;
           }
 
           .settings {
@@ -626,8 +637,10 @@
       }
     }
 
-    .chart-data .bar-plots .chart-lines .chart-info {
-      bottom: -70px;
+    .chart-data .bar-plots .chart-lines {
+      .chart-info {
+        bottom: -70px;
+      }
     }
 
     .chart-data {
@@ -670,11 +683,13 @@
 
               .primary {
                 .primary-text {
+                  font-size: 14px;
                 }
               }
 
               .secondary {
                 .secondary-text {
+                  font-size: 14px;
                 }
               }
             }
@@ -705,6 +720,14 @@
 
             .chart-item {
               div {
+              }
+
+              .div {
+                .crash-content {
+                  p {
+                    font-size: 14px;
+                  }
+                }
               }
 
               .primary {
@@ -787,17 +810,22 @@
       }
     }
 
-    .chart-data .bar-plots .chart-lines .chart-info {
-      bottom: -50px;
+    .chart-data .bar-plots .chart-lines {
+      left: 0;
+      .chart-info {
+        bottom: -50px;
 
-      .line {
-        display: inline;
-      }
-      .content {
-        flex-direction: column;
+        .line {
+          display: inline;
+          left: 0;
+          width: 128%;
+        }
+        .content {
+          flex-direction: column;
 
-        .chart-info-performance {
-          margin-bottom: 8px;
+          .chart-info-performance {
+            margin-bottom: 8px;
+          }
         }
       }
     }
@@ -859,6 +887,12 @@
               .div {
                 position: relative;
                 width: 100%;
+
+                .crash-content {
+                  p {
+                    font-size: 12px;
+                  }
+                }
               }
 
               div {
@@ -876,6 +910,7 @@
 
                 .primary-text {
                   padding-right: 12px;
+                  font-size: 12px;
                 }
               }
 
@@ -888,6 +923,7 @@
 
                 .secondary-text {
                   padding-right: 12px;
+                  font-size: 12px;
                 }
               }
             }
