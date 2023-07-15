@@ -71,10 +71,10 @@ body {
               display: flex;
               justify-content: center;
 
-              img {
+              svg {
                 height: 18px;
                 width: 18px;
-                margin-right: 8px;
+                margin-right: 6px;
               }
             }
 
@@ -114,7 +114,7 @@ body {
             display: flex;
             align-items: center;
 
-            img {
+            svg {
               height: 18px;
               width: 18px;
               margin-right: 4px;
@@ -132,6 +132,7 @@ body {
               li {
                 display: inline-block;
                 margin-right: 8px;
+                cursor: pointer;
 
                 &:hover {
                   text-decoration: underline;
@@ -266,7 +267,6 @@ body {
       .chart-data-content {
         .wrapper {
           display: flex;
-          cursor: pointer;
           padding-bottom: 16px;
 
           &:first-child {
@@ -283,6 +283,7 @@ body {
             justify-content: center;
             align-items: center;
             position: relative;
+            cursor: pointer;
 
             .title-block {
               display: flex;
@@ -324,6 +325,29 @@ body {
             display: flex;
             align-items: center;
 
+            .crash-content {
+              display: flex;
+              align-items: center;
+              justify-content: start;
+
+              .crash {
+                background: linear-gradient(90deg, #ec1c24 0%, #76191f 100%);
+                color: #fff;
+                font-weight: 500;
+                position: relative;
+                border: 0;
+                max-width: 3px;
+                width: 3px;
+                margin-right: 12px;
+              }
+
+              p {
+                color: #79191f;
+                font-weight: 600;
+                margin-left: 6px;
+              }
+            }
+
             .div {
               position: relative;
               width: 100%;
@@ -341,9 +365,16 @@ body {
               background: linear-gradient(90deg, #ec1c24 0%, #76191f 100%);
               color: #fff;
               font-weight: 500;
+              position: relative;
 
               .primary-text {
                 padding-right: 12px;
+              }
+
+              .percent {
+                position: absolute;
+                right: -50px;
+                color: #333333;
               }
             }
 
